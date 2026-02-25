@@ -1,6 +1,7 @@
 export default function Home() {
   const ctaUrl = "https://intranet.sisuvp.com/libero/chat";
   const logoUrl = "https://fengbrasil.com.br/assets/images/logo_feng_.png";
+  const footerLogoUrl = "https://images.libero.fengbrasil.com.br/uploads/FengCropped_1772031325012_iw57u0.png";
 
   return (
     <main className="min-h-screen font-sans bg-white text-[#1a1a1a]">
@@ -135,7 +136,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-white border-t border-gray-100 py-12 px-4">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-6">
-          <img src={logoUrl} alt="Logo Feng" className="h-12 w-auto" />
+          <img src={footerLogoUrl} alt="Logo Feng" className="h-12 w-auto" />
           <p className="text-gray-400 text-sm text-center">
             © {new Date().getFullYear()} Feng IA - Todos os direitos reservados.
           </p>
