@@ -2,6 +2,7 @@ export default function Home() {
   const ctaUrl = "https://intranet.sisuvp.com/libero/chat";
   const logoUrl = "https://fengbrasil.com.br/assets/images/logo_feng_.png";
   const footerLogoUrl = "https://images.libero.fengbrasil.com.br/uploads/FengCropped_1772031325012_iw57u0.png";
+  const heroImageUrl = "https://images.libero.fengbrasil.com.br/uploads/Feng_1772032715716_ubsput.png";
 
   return (
     <main className="min-h-screen font-sans bg-white text-[#1a1a1a]">
@@ -21,7 +22,7 @@ export default function Home() {
       </header>
 
       {/* 1º SCROLL: HERO SECTION */}
-      <section className="min-h-screen flex flex-col items-center justify-center pt-20 px-4 text-center bg-gradient-to-br from-[#f8faff] via-white to-[#f0f4ff]">
+      <section className="min-h-screen flex flex-col items-center justify-center pt-32 pb-20 px-4 text-center bg-gradient-to-br from-[#f8faff] via-white to-[#f0f4ff]">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-[#0f172a] mb-6">
             Crie agora sua nova landing page usando a <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0055ff] to-[#8b5cf6]">Feng IA</span>
@@ -29,14 +30,24 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-gray-600 mb-10">
             É fácil e fica pronto em instantes
           </p>
-          <a
-            href={ctaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#0055ff] text-white text-lg md:text-xl px-12 py-5 rounded-xl font-bold shadow-xl shadow-blue-200 hover:scale-105 transition-transform active:scale-95"
-          >
-            Comece agora
-          </a>
+          <div className="flex flex-col items-center gap-12">
+            <a
+              href={ctaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#0055ff] text-white text-lg md:text-xl px-12 py-5 rounded-xl font-bold shadow-xl shadow-blue-200 hover:scale-105 transition-transform active:scale-95"
+            >
+              Comece agora
+            </a>
+            
+            <div className="w-full max-w-3xl mt-8 rounded-2xl overflow-hidden shadow-2xl border border-gray-100">
+              <img 
+                src={heroImageUrl} 
+                alt="Feng IA Interface" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
